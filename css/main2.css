@@ -129,8 +129,14 @@
 .modal {
   padding: 160px 15px 15px 15px;
 }
-.modal-dialog {
+#modal-home .modal-dialog {
   max-width: 1350px;
+}
+#modal-form .modal-dialog {
+  max-width: 500px;
+  padding: 60px 25px 25px 25px;
+}
+.modal-dialog {
   width: 100%;
   background: #fff;
   margin: 0 auto;
@@ -146,6 +152,10 @@
   width: 100%;
   height: auto;
 }
+#modal-form .close {
+  top: -40px;
+  right: 0px;
+}
 .modal-content {
   background: transparent;
   border: none;
@@ -153,6 +163,16 @@
 }
 .modal-body {
   padding: 0;
+}
+#modal-form .form {
+  gap: 20px;
+  margin-bottom: 0;
+}
+#modal-form .form-group input {
+  height: 60px;
+}
+#modal-form .form-btn {
+  height: 60px;
 }
 .home-main__img {
   position: relative;
@@ -435,6 +455,10 @@
   background: #0D0D0D;
   font-family: 'Montserrat';
 }
+.home .rev_slider_wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .home .text-center {
   display: flex;
   justify-content: space-between;
@@ -534,7 +558,7 @@
 
 /* Contacts */
 .contacts {
-  padding: 120px 0 70px;
+  padding: 70px 0;
   font-family: 'Rubik';
   color: #000;
 }
@@ -544,8 +568,17 @@
 .contacts .page-col {
   border-color: rgba(0, 0, 0, 0.31);
 }
+.contacts__img {
+  position: relative;
+  padding-bottom: 25%;
+}
 .contacts__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .contacts__items {
   display: grid;
@@ -603,13 +636,16 @@
 .contacts__item-list li a:hover {
   opacity: 0.7;
 }
-.contacts .form {
+.form {
   display: grid;
   grid-template-columns: 100%;
   gap: 10px;
   margin-bottom: 30px;
 }
-.contacts .form-group input {
+.form-group {
+  margin: 0;
+}
+.form-group input {
   width: 100%;
   height: 40px;
   background: #EDEDED;
@@ -621,11 +657,11 @@
 .contacts .form-group input::placeholder {
   color: #8A8383;
 }
-.contacts .form-check {
+.form-check {
   position: relative;
   padding: 0;
 }
-.contacts .form-check input {
+.form-check input {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -636,17 +672,17 @@
   margin: 0;
   opacity: 0;
 }
-.contacts .form-check input:checked ~ label i::after,
-.contacts .form-check input:checked~label i::before {
+.form-check input:checked ~ label i::after,
+.form-check input:checked~label i::before {
   opacity: 1;
 }
-.contacts .form-check label {
+.form-check label {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
-.contacts .form-check label i {
+.form-check label i {
   position: relative;
   width: 18px;
   height: 18px;
@@ -654,7 +690,7 @@
   background: #000;
   margin-right: 13px;
 }
-.contacts .form-check label i::after {
+.form-check label i::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -665,7 +701,7 @@
   border: 2px solid #fff;
   opacity: 0;
 }
-.contacts .form-check label i::before {
+.form-check label i::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -676,25 +712,25 @@
   background: #fff;
   opacity: 0;
 }
-.contacts .form-check label p {
+.form-check label p {
   font-size: 11px;
   line-height: 145%;
 }
-.contacts .form-check label a {
+.form-check label a {
   position: relative;
   z-index: 3;
   text-decoration: underline;
   color: #000;
 }
-.contacts .form-check label a:hover {
+.form-check label a:hover {
   text-decoration: unset;
   opacity: 0.7;
 }
-.contacts .form-btn {
+.form-btn {
   height: 40px;
   border-width: 1px !important;
 }
-.contacts .form-btn span {
+.form-btn span {
   font-size: 19px;
   font-weight: 400 !important;
 }
