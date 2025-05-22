@@ -63,6 +63,11 @@ $(document).ready(function () {
         $(this).parents(".tabs-inner").find(`.tab__content[data-content-path="${path}"]`).addClass("tab__content--active")
     })
 
+    //Modal
+    $('.modal').on('show.bs.modal', function (e) {
+        $('.modal').not(this).modal('hide');
+    });
+
 })
 
 
