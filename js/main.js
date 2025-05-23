@@ -66,6 +66,9 @@ $(document).ready(function () {
     //Modal
     $('.modal').on('show.bs.modal', function (e) {
         $('.modal').not(this).modal('hide');
+        $('.menu-sidebar').removeClass('active')
+        $('#menu-sidebar-overlay').removeClass('active')
+        $('.hamburger').removeClass('is-active')
     });
 
 })
