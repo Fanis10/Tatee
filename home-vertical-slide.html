@@ -102,11 +102,6 @@
                                     aria-controls="sub3">Генплан
                                 </a>
                             </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#" data-toggle="collapse" data-target="#sub4" aria-expanded="true"
-                                    aria-controls="sub4">Ход строительства
-                                </a>
-                            </li>
                             <li class="menu-item">
                                 <a href="contacts.html">Контакты</a>
                             </li>
@@ -116,7 +111,6 @@
                         <div class="menu-sidebar__socials">
                             <a class="menu-sidebar__social" href="">Whats App</a>
                             <a class="menu-sidebar__social" href="">Telegram</a>
-                            <a class="menu-sidebar__social" href="">Vkontakte</a>
                         </div>
                         <button class="menu-sidebar__btn" data-target="#modal-form" data-toggle="modal">
                             <span>ОБРАТНЫЙ ЗВОНОК</span>
@@ -281,7 +275,22 @@
                         data-rev-layout="fullscreen" data-rev-bullets="false" data-rev-arrows="false">
                         <ul>
                             <li class="rev-item rev-item-1" data-transition="crossfade">
-                                <img class="rev-slidebg" src="images/slide-03.webp" alt="Master Slider 01" />
+                                <div class="main__slider">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="rev-slidebg" src="images/slide-03-1.png"
+                                                    alt="Master Slider 01" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="rev-slidebg" src="images/slide-03-2.png"
+                                                    alt="Master Slider 01" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
                                 <div class="main__group">
                                     <div class="main__subgroup">
                                         <div class="main__subtitle tp-caption tp-resizeme rev-text-1"
@@ -317,20 +326,19 @@
                                             природной
                                             тишине
                                         </div>
-                                        <a class="main__social" href="">
-                                            <img src="images/icon/whatsapp2.png" alt="">
-                                        </a>
                                     </div>
-                                    <button class="main__btn m-btn btn-white__outline tp-caption tp-resizeme"
-                                        data-target="#modal-form" data-toggle="modal" target="_self"
-                                        data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1200,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
-                                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 15]"
-                                        data-voffset="[185, 185, 210, 180, 170]" data-width="['auto']"
-                                        data-height="[&quot;auto&quot;]" data-responsive_offset="on"
-                                        data-responsive="off"
-                                        data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
-                                        <span>ОСТАВИТЬ ЗАЯВКУ</span>
-                                    </button>
+                                    <div class="main__btn-wrap">
+                                        <button class="main__btn m-btn btn-white__outline tp-caption tp-resizeme"
+                                            data-target="#modal-form" data-toggle="modal" target="_self"
+                                            data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1200,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                                            data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 15]"
+                                            data-voffset="[185, 185, 210, 180, 170]" data-width="['auto']"
+                                            data-height="[&quot;auto&quot;]" data-responsive_offset="on"
+                                            data-responsive="off"
+                                            data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                                            <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -359,7 +367,7 @@
                                 <article class="media media-service-1">
                                     <figure class="media__img">
                                         <div class="media__img-inner">
-                                            <img src="images/service-01.webp" alt="architecture" />
+                                            <img src="images/service-01.png" alt="architecture" />
                                         </div>
                                     </figure>
                                     <div class="media__title title-number">
@@ -378,7 +386,7 @@
                                 <article class="media media-service-1">
                                     <figure class="media__img">
                                         <div class="media__img-inner">
-                                            <img src="images/service-02.webp" alt="Interior" />
+                                            <img src="images/service-02.png" alt="Interior" />
                                         </div>
                                     </figure>
                                     <div class="media__title title-number">
@@ -398,7 +406,7 @@
                                 <article class="media media-service-1">
                                     <figure class="media__img">
                                         <div class="media__img-inner">
-                                            <img src="images/service-03.webp" alt="planning" />
+                                            <img src="images/service-03.png" alt="planning" />
                                         </div>
                                     </figure>
                                     <div class="media__title title-number">
@@ -421,7 +429,7 @@
             <!-- END SECTION-->
 
             <!-- SECTION-->
-            <section class="section-pp pp-easing bg-pattern-1 section-pp--pad home" data-background="dark"
+            <section class="section-pp pp-easing bg-pattern-1 section-pp--pad home" id="home" data-background="dark"
                 data-title="Выбрать дом">
                 <!-- PAGE LINE-->
                 <div class="page-line light">
@@ -441,30 +449,6 @@
                                 data-rev-height="650" data-rev-layout="auto" data-rev-bullets="false"
                                 data-rev-arrows="true" data-rev-stylearrow="au-rev-arrow-3" data-rev-parallaxon="true">
                                 <ul class="list-rev-item--ov">
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/4-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D1</a>
-                                            <button data-tab-path=1 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="zoomout">
-                                        <img class="rev-slidebg" src="images/3-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D2</a>
-                                            <button data-tab-path="2" class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
                                     <li class="rev-item rev-item-1 rev-item--ov" data-transition="zoomin">
                                         <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
                                             data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
@@ -496,186 +480,6 @@
                                         <div class="text-center">
                                             <a href="" class="home__title">Проект D5</a>
                                             <button data-tab-path=5 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/5-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D6</a>
-                                            <button data-tab-path=6 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D7</a>
-                                            <button data-tab-path=7 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D8</a>
-                                            <button data-tab-path=8 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D9</a>
-                                            <button data-tab-path=9 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D10</a>
-                                            <button data-tab-path=10 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D11</a>
-                                            <button data-tab-path=11 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D12</a>
-                                            <button data-tab-path=12 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/4-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D13</a>
-                                            <button data-tab-path=13 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/4-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D14</a>
-                                            <button data-tab-path=14 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D15</a>
-                                            <button data-tab-path=15 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D16</a>
-                                            <button data-tab-path=16 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D17</a>
-                                            <button data-tab-path=17 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D18</a>
-                                            <button data-tab-path=18 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D19</a>
-                                            <button data-tab-path=19 class="home__btn m-btn btn-white__outline tab"
-                                                data-toggle="modal" data-target="#modal-home">
-                                                <span>ПОДРОБНЕЕ</span>
-                                            </button>
-                                        </div>
-                                    </li>
-                                    <li class="rev-item rev-item-1 rev-item--ov" data-transition="crossfade">
-                                        <img class="rev-slidebg" src="images/6-blocks.webp" alt="Master Slider 01"
-                                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                                            data-bgparallax="6" />
-                                        <div class="text-center">
-                                            <a href="" class="home__title">Проект D20</a>
-                                            <button data-tab-path=20 class="home__btn m-btn btn-white__outline tab"
                                                 data-toggle="modal" data-target="#modal-home">
                                                 <span>ПОДРОБНЕЕ</span>
                                             </button>
@@ -3688,17 +3492,16 @@
                             <div class="contacts__item mob-remove">
                                 <div class="contacts__item-title">ИНФОРМАЦИЯ:</div>
                                 <ul class="contacts__item-list">
-                                    <li><a href="">О проекте</a></li>
+                                    <li><a href="about-project.html">О проекте</a></li>
                                     <li><a href="">Локация</a></li>
                                     <li><a href="">Выбрать дом</a></li>
-                                    <li><a href="">Генплан</a></li>
-                                    <li><a href="">Ход строительства</a></li>
-                                    <li><a href="">Контакты</a></li>
+                                    <li><a href="plan.html">Генплан</a></li>
+                                    <li><a href="contacts.html">Контакты</a></li>
                                 </ul>
                                 <a href="" class="contacts__item-info">Политика конфиденциальности</a>
                             </div>
                             <div class="contacts__item contacts__item--mob">
-                                <div class="contacts__item-title">Подпишитесь</div>
+                                <div class="contacts__item-title">Связаться</div>
                                 <div class="contacts__item-socials">
                                     <a class="contacts__item-social" href="">Whats App</a>
                                     <a class="contacts__item-social" href="">Telegram</a>
@@ -3728,11 +3531,11 @@
                                         <span>Оправить заявку</span>
                                     </button>
                                 </form>
-                                <a href="" class="contacts__item-info">
-                                    Все права на публикуемые на сайте
-                                    tamir-development.ru  материалы принадлежат ИП «Биктагиров Раиль Вахитович» 2024 -
-                                    2025.
-                                </a>
+                                <div class="contacts__item-info">
+                                    "Все права на публикуемые на сайте <a href="">tamir-development.ru</a> материалы
+                                    принадлежат ИП
+                                    «Биктагиров Раиль Вахитович» 2024 - 2025."
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3772,6 +3575,10 @@
                 </div>
             </div>
         </footer>
+
+        <a class="whatsapp" href="https://wa.me/79274944558">
+            <img src="images/icon/whatsapp2.png" alt="">
+        </a>
 
         <div class="modal fade" id="modal-home" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
             aria-hidden="true">
@@ -4439,7 +4246,7 @@
                                     </div>
                                     <div class="home-info__group">
                                         <div class="home-info__title">
-                                            БЛОК
+                                            Секция
                                             <div class="home-info__block">
                                                 <span>S</span>
                                             </div>
@@ -4472,12 +4279,12 @@
                                     </div>
                                     <div class="home-info__group">
                                         <div class="home-info__title">
-                                            БЛОК
+                                            Секция
                                             <div class="home-info__block">
                                                 <span>L</span>
                                             </div>
                                         </div>
-                                        <div class="home-info__size">110,2m2</div>
+                                        <div class="home-info__size">138,2m2</div>
                                         <div class="home-info__items">
                                             <div class="home-info__item">
                                                 <div class="home-info__item-title">Первый этаж</div>
@@ -4485,7 +4292,7 @@
                                                     <img src="images/home-info__img.webp" alt="">
                                                 </div>
                                                 <div class="home-info__item-size">
-                                                    ПЛОЩАДЬ ЭТАЖА - <strong>64,5m2</strong>
+                                                    ПЛОЩАДЬ ЭТАЖА - <strong>79,2m2</strong>
                                                 </div>
                                             </div>
                                             <div class="home-info__item">
@@ -4494,7 +4301,7 @@
                                                     <img src="images/home-info__img2.webp" alt="">
                                                 </div>
                                                 <div class="home-info__item-size">
-                                                    ПЛОЩАДЬ ЭТАЖА - <strong>45,7m2</strong>
+                                                    ПЛОЩАДЬ ЭТАЖА - <strong>59,0m2</strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -4505,12 +4312,12 @@
                                     </div>
                                     <div class="home-info__group">
                                         <div class="home-info__title">
-                                            БЛОК
+                                            Секция
                                             <div class="home-info__block">
                                                 <span>L+</span>
                                             </div>
                                         </div>
-                                        <div class="home-info__size">110,2m2</div>
+                                        <div class="home-info__size">143,9m2</div>
                                         <div class="home-info__items">
                                             <div class="home-info__item">
                                                 <div class="home-info__item-title">Первый этаж</div>
@@ -4518,7 +4325,7 @@
                                                     <img src="images/home-info__img.webp" alt="">
                                                 </div>
                                                 <div class="home-info__item-size">
-                                                    ПЛОЩАДЬ ЭТАЖА - <strong>64,5m2</strong>
+                                                    ПЛОЩАДЬ ЭТАЖА - <strong>82,1m2</strong>
                                                 </div>
                                             </div>
                                             <div class="home-info__item">
@@ -4527,7 +4334,7 @@
                                                     <img src="images/home-info__img2.webp" alt="">
                                                 </div>
                                                 <div class="home-info__item-size">
-                                                    ПЛОЩАДЬ ЭТАЖА - <strong>45,7m2</strong>
+                                                    ПЛОЩАДЬ ЭТАЖА - <strong>61,8m2</strong>
                                                 </div>
                                             </div>
                                         </div>

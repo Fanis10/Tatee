@@ -1,3 +1,13 @@
+function sliderMain() {
+    var swiper = new Swiper('.main__slider .mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: ".main__slider .swiper-button-next",
+            prevEl: ".main__slider .swiper-button-prev",
+          },
+    })
+}
 function sliderHomeMain() {
     var swiper = new Swiper('.home-main .mySwiper', {
         slidesPerView: 1,
@@ -49,6 +59,7 @@ function sliderProjectInfo2() {
 
 
 $(document).ready(function () {
+  sliderMain();
   sliderHomeMain();
   sliderProjectInfo();
   sliderProjectInfo2();
